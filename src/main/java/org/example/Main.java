@@ -18,18 +18,17 @@ public class Main {
     private static void testPersonClass() {
         System.out.println("Testing Person class:");
         try {
-            // Test with valid input
             Person person1 = new Person("John Doe", 30);
             System.out.println("Person created successfully: " + person1.getName() + ", " + person1.getAge());
 
-            // Test with invalid name (too long)
+            @SuppressWarnings("unused")
             Person person2 = new Person("This name is way too long and exceeds forty characters", 25);
         } catch (IllegalArgumentException e) {
             System.out.println("Exception caught (Person): " + e.getMessage());
         }
 
         try {
-            // Test with invalid age
+            @SuppressWarnings("unused")
             Person person3 = new Person("Jane Doe", 150);
         } catch (IllegalArgumentException e) {
             System.out.println("Exception caught (Person): " + e.getMessage());

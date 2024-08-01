@@ -4,16 +4,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class AverageSensor implements Main.Sensor {
-    private List<Main.Sensor> sensors;
-    private List<Integer> readings;
+    private final List<Main.Sensor> sensors;
+    private final List<Integer> readings;
 
     public AverageSensor() {
         this.sensors = new ArrayList<>();
         this.readings = new ArrayList<>();
     }
 
-    public void addSensor(Main.Sensor toAdd) {
-        sensors.add(toAdd);
+    public void addSensor(Main.Sensor sensor) {
+        sensors.add(sensor);
     }
 
     @Override

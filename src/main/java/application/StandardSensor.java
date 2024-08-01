@@ -14,10 +14,12 @@ public class StandardSensor implements Main.Sensor {
 
     @Override
     public void setOn() {
+        // Does nothing as the sensor is always on
     }
 
     @Override
     public void setOff() {
+        // Does nothing as the sensor is always on
     }
 
     @Override

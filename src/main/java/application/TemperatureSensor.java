@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class TemperatureSensor implements Main.Sensor {
     private boolean isOn;
-    private Random random;
+    private final Random random;
 
     public TemperatureSensor() {
         this.isOn = false;
@@ -31,6 +31,6 @@ public class TemperatureSensor implements Main.Sensor {
         if (!isOn) {
             throw new IllegalStateException("Sensor is off");
         }
-        return random.nextInt(61) - 30;
+        return random.nextInt(61) - 30; // Returns a random temperature between -30 and 30
     }
 }

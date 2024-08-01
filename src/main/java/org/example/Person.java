@@ -4,8 +4,8 @@ package org.example;
  * Includes validation for name and age parameters.
  */
 public class Person {
-    private String name;
-    private int age;
+    private final String name;
+    private final int age;
 
     /**
      * Constructor for Person class.
